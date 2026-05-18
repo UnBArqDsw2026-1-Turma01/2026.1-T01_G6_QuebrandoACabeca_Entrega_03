@@ -98,8 +98,8 @@ Não. Por enquanto, o repositório contém apenas a documentação do projeto. C
 
 | Versão | Data | Alterações | Autor |
 |:------:|:----:|------------|:-----:|
-| `1.0` | 14/04/2026 | Inserir o template inicial da página. | Lucas Ricarte |
-| `1.1` | 23/04/2026 | Ajustar o template inicial da página. | João Eduardo  |
+| `1.0` | 15/05/2026 | Inserir o template inicial da página. | Lucas Ricarte |
+| `1.1` | 15/05/2026 | Ajustar o template inicial da página. | João Eduardo  |
 
 <div align="center">
 <br>
