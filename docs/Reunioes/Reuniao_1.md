@@ -2,10 +2,10 @@
 
 ## Informações Gerais
 
-| Campo        | Detalhe                              |
-|-------------|---------------------------------------|
-| **Data**    | 18 de maio de 2026                    |
-| **Formato** | Reunião de alinhamento do grupo       |
+| Campo         | Detalhe                                |
+|---------------|----------------------------------------|
+| **Data**      | 18 de maio de 2026                     |
+| **Formato**   | Reunião de alinhamento do grupo        |
 | **Presentes** | Caio, João F., João E., Lucas, Eduardo |
 
 ---
@@ -27,25 +27,22 @@ Ficou acordado que um ou mais integrantes do grupo irão **auxiliar o Caio** na 
 - **Composite** — padrão GOF estrutural já diagramado, a ser implementado na lógica das peças
 - **Return Pattern** — padronização dos retornos das funções/endpoints
 
-> **Responsável pelo suporte:** a definir entre os membros disponíveis.
-
 ---
 
 ### 3. Início do Front-end
 
 Foi identificada a necessidade de **iniciar a implementação do front-end**. Essa frente ainda não foi iniciada e deve ser priorizada nas próximas entregas.
 
-> **Próximo passo:** definir responsáveis e tecnologia a ser utilizada.
+> **Próximo passo:** definir responsáveis.
 
 ---
 
 ### 4. Documentação
 
-O estado atual da documentação foi avaliado como **satisfatório**. Contudo, ficou aberto que qualquer adição decorrente da implementação é bem-vinda e deve ser incorporada ao repositório.
+O estado atual da documentação foi avaliado como **satisfatório** para entrega **mínima**. Contudo, ficou aberto que qualquer adição decorrente da implementação deve ser incorporada ao repositório, além de melhorias nos pontos já existentes.
 
-Tópicos de documentação extra levantados, **além dos padrões GOF**:
+Tópicos de documentação extra levantados, **além dos padrões GOF** (Podem haver mais):
 
-- Diagramas complementares (Casos de Uso, Sequência, Estados, Atividades)
 - Documentação de padrões **GRASP** aplicados ao projeto
 - Justificativas de decisões arquiteturais
 
@@ -66,8 +63,8 @@ Como ponto adicional, foi levantada a possibilidade de utilizar o padrão **Sing
 | 1 | Estrutura do back-end definida | Grupo | ✅ Definido |
 | 2 | Apoio ao Caio com esqueleto do back-end (DTO, Builder, Composite, Return Pattern) | A definir | 🔄 Pendente |
 | 3 | Iniciar implementação do front-end | A definir | 🔄 Pendente |
-| 4 | Documentação OK; adições conforme implementação | Grupo | ✅ On-Going |
-| 5 | Avaliar uso do Singleton para multiplayer | A definir | 🔍 Extra |
+| 4 | Documentação; adições conforme implementação | Grupo | 🔄 Pendente |
+| 5 | Avaliar uso do Singleton para multiplayer | A definir | 🔄 Pendente |
 
 ---
 
