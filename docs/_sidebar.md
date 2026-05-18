@@ -2,6 +2,10 @@
 
 - [Inicio](/README.md)
 
+- **Atas de Reuniões**
+  - [Reuniões](/Reunioes/Reuniao.md)
+    - [1. Reuniao 18/05/2026](/Reunioes/Reuniao_1.md)
+
 - **Padrões de Projeto**
   - [3. Desenho de Software (Padrões de Projeto)](/PadroesDeProjeto/3.PadroesDeProjeto.md)
     - [3.1. Padrões de Projeto GoFs Criacionais](/PadroesDeProjeto/3.1.GoFsCriacionais.md)

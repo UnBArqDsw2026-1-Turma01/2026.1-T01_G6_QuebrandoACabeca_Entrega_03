@@ -447,11 +447,6 @@ body {
           <td><a href="https://github.com/MarcosViniciusG">@MarcosViniciusG</a></td>
         </tr>
         <tr>
-          <td>23/2014146</td>
-          <td>Pedro Teixeira Moriel Sanchez</td>
-          <td><a href="https://github.com/PedroDev-sketch">@PedroDev-sketch</a></td>
-        </tr>
-        <tr>
           <td>23/2014093</td>
           <td>Lucas Machado Peres Ricarte</td>
           <td><a href="https://github.com/Lucas-Ricarte">@Lucas-Ricarte</a></td>

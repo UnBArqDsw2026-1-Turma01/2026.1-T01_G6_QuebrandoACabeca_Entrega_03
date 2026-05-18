@@ -53,12 +53,6 @@ O projeto é requisito de avaliação da disciplina Arquitetura & Desenho de Sof
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/PedroDev-sketch">
-        <img src="https://avatars.githubusercontent.com/PedroDev-sketch" width="100" height="100" style="border-radius:50%"/><br/>
-        <sub><b>Pedro Sanchez</b></sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/Lucas-Ricarte">
         <img src="https://avatars.githubusercontent.com/Lucas-Ricarte" width="100" height="100" style="border-radius:50%"/><br/>
         <sub><b>Lucas Ricarte</b></sub>
