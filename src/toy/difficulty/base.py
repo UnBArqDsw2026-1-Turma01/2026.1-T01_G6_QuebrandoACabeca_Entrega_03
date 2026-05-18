@@ -11,6 +11,10 @@ class Difficulty(ABC):
     """
 
     def __init_subclass__(cls, **kwargs):
+        """
+        Método para garantir que os templates não sejam reimplementados pelas subclasses.
+        Para adicionar mais um template, basta adicioná-lo na lista protected_methods.
+        """
         super().__init_subclass__(**kwargs)
         protected_methods = [
             "get_difficulty_level",

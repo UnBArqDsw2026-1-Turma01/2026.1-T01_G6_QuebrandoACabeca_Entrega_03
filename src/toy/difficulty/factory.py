@@ -7,11 +7,11 @@ from .base import Difficulty
 
 def get_difficulty(selected_difficulty: str) -> Difficulty:
     """
-    Dynamically imports and instantiates the difficulty only when requested.
+    Importa e instancia a classe de dificuldade selecionada dinamicamente.
     Args:
-        selected_difficulty (str): The selected_difficulty to use.
+        selected_difficulty (str): A dificuldade selecionada.
     Returns:
-        Difficulty: An instance of the requested difficulty.
+        Difficulty: A instância da dificuldade selecionada.
     """
     try:
         module = importlib.import_module(
