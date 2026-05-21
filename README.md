@@ -111,9 +111,9 @@ Acesse em: **http://localhost:3001**
 
 | Versão | Data | Alterações | Autor |
 |:------:|:----:|------------|:-----:|
-| `1.0` | 15/05/2026 | Inserir o template inicial da página. | Lucas Ricarte |
-| `1.1` | 15/05/2026 | Ajustar o template inicial da página. | João Eduardo  |
-| `1.2` | 21/05/2026 | Adicionar instruções de execução do frontend. | Lucas Ricarte |
+| `1.0` | 15/05/2026 | Inserir o template inicial da página.         | Lucas Ricarte |
+| `1.1` | 15/05/2026 | Ajustar o template inicial da página.         | João Eduardo  |
+| `1.2` | 21/05/2026 | Adicionar instruções de execução do frontend. | João Eduardo |
 
 <div align="center">
 <br>
