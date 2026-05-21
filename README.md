@@ -47,12 +47,6 @@ O projeto é requisito de avaliação da disciplina Arquitetura & Desenho de Sof
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/MarcosViniciusG">
-        <img src="https://avatars.githubusercontent.com/MarcosViniciusG" width="100" height="100" style="border-radius:50%"/><br/>
-        <sub><b>Marcos Vinícius</b></sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/Lucas-Ricarte">
         <img src="https://avatars.githubusercontent.com/Lucas-Ricarte" width="100" height="100" style="border-radius:50%"/><br/>
         <sub><b>Lucas Ricarte</b></sub>
@@ -83,10 +77,35 @@ docsify serve ./docs
 
 Acesse em: **http://localhost:3000**
 
-## 🚀 Há algo a ser executado?
+## 🧩 Executando o Frontend
 
-Não. Por enquanto, o repositório contém apenas a documentação do projeto. Caso venha a existir um artefato executável, um manual de instruções será disponibilizado aqui.
+O coração interativo do projeto — a interface onde os quebra-cabeças ganham vida.
 
+### Pré-requisitos
+
+> [Node.js](https://nodejs.org/) instalado na máquina.
+
+### 1 · Entrar na pasta do frontend
+
+```sh
+cd frontend
+```
+
+### 2 · Instalar as dependências
+
+```sh
+npm install
+```
+
+### 3 · Iniciar o servidor de desenvolvimento
+
+```sh
+npm start
+```
+
+Acesse em: **http://localhost:3001**
+
+> 💡 Caso a porta `3001` já esteja em uso, o React sugerirá automaticamente a próxima disponível.
 
 ## 📜 Histórico de Versões
 
@@ -94,6 +113,7 @@ Não. Por enquanto, o repositório contém apenas a documentação do projeto. C
 |:------:|:----:|------------|:-----:|
 | `1.0` | 15/05/2026 | Inserir o template inicial da página. | Lucas Ricarte |
 | `1.1` | 15/05/2026 | Ajustar o template inicial da página. | João Eduardo  |
+| `1.2` | 21/05/2026 | Adicionar instruções de execução do frontend. | Lucas Ricarte |
 
 <div align="center">
 <br>
@@ -102,4 +122,3 @@ Universidade de Brasília — Faculdade de Ciências e Tecnologias
 Prof.ª Milene Serrano
 <br>
 </div>
-
