@@ -442,11 +442,6 @@ body {
           <td><a href="https://github.com/MrBolt2005">@MrBolt2005</a></td>
         </tr>
         <tr>
-          <td>23/2014100</td>
-          <td>Marcos Vinícius Gündel da Silva</td>
-          <td><a href="https://github.com/MarcosViniciusG">@MarcosViniciusG</a></td>
-        </tr>
-        <tr>
           <td>23/2014093</td>
           <td>Lucas Machado Peres Ricarte</td>
           <td><a href="https://github.com/Lucas-Ricarte">@Lucas-Ricarte</a></td>
@@ -459,7 +454,7 @@ body {
     <div class="section-label">§ 03</div>
     <h2 class="section-title">Screenshots da Terceira Entrega</h2>
     <div class="screenshots-placeholder">
-      [ Galeria de capturas de tela — inserir slider aqui ]
+        [[slider]](assets/Builder.jpg|assets/Composite.jpg|assets/Strategy.jpg|assets/Fluxograma.png|assets/Figma/Cadastro.png|assets/Figma/Configuracoes.png|assets/Figma/Dica.png|assets/Figma/Historico.png|assets/Figma/JogoRodando.png|assets/Figma/MenuPrincipal.png|assets/Figma/PausarJogo.png|assets/Figma/Placar.png|assets/Figma/ProximoNivel.png|assets/Figma/RecuperarSenha.png|assets/Figma/SelecaoDificuldade.png|assets/Figma/SelecaoNivel.png|assets/Figma/TelaLogin.png|assets/Figma/Tutorial.png|assets/Figma/UploadImagem.png|assets/Figma/Vitoria.png)
     </div>
   </div>
   <!-- EXECUÇÃO -->
@@ -467,12 +462,24 @@ body {
     <div class="section-label">§ 04</div>
     <h2 class="section-title">Há Algo a Ser Executado?</h2>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;">
-      <div class="exec-badge"><span class="exec-dot"></span> SIM</div>
-      <div class="exec-badge"><span class="exec-dot active"></span> NÃO</div>
+      <div class="exec-badge"><span class="exec-dot active"></span> SIM</div>
+      <div class="exec-badge"><span class="exec-dot "></span> NÃO</div>
     </div>
-    <p style="color:var(--ink-muted);font-style:italic;font-size:0.92rem;">
-      Caso venha a existir algo executável, um manual ou script de instruções será disponibilizado aqui.
-    </p>
+
+  <p style="color:var(--ink-muted);font-size:0.92rem;margin-bottom:1rem;">
+    Para executar o <strong>Frontend</strong> localmente, navegue até a pasta
+    <code>frontend</code> do repositório e execute os comandos abaixo:
+  </p>
+  <pre style="background:var(--bg-card);border:1px solid var(--rule);padding:1.25rem 1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.82rem;color:var(--ink);line-height:1.8;overflow-x:auto;">
+  <span style="color:var(--ink-faint)"># 1. Instalar as dependências</span>
+  npm install
+
+  <span style="color:var(--ink-faint)"># 2. Iniciar a aplicação</span>
+  npm start</pre>
+  <p style="color:var(--ink-muted);font-size:0.92rem;margin-top:1rem;">
+    A aplicação estará disponível em
+    <a href="http://localhost:3000" class="footer-link" style="font-family:'JetBrains Mono',monospace;font-size:0.85rem;">http://localhost:3000 ↗</a>
+  </p>
   </div>
   <!-- INFORMAÇÕES COMPLEMENTARES -->
   <div class="section">
@@ -505,6 +512,13 @@ body {
         <tr>
           <td>15/05/2026</td>
           <td>Editar o template da página.</td>
+          <td>João Eduardo</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>22/05/2026</td>
+          <td>Inclusão dos Screenshots e ajustes.</td>
           <td>João Eduardo</td>
         </tr>
       </tbody>
