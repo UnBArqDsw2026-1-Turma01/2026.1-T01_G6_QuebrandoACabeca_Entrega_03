@@ -42,3 +42,5 @@ class Difficulty(ABC):
             int: O número de peças do jogo.
         """
         pass
+
+    # TODO: Definir um método para retornar o tamanho das peças, ou seja, o tamanho do lado de cada peça (em pixels).
