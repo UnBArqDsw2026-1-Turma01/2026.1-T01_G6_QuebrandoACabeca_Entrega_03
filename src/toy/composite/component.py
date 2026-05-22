@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from abc import ABC, abstractmethod
 
 
@@ -26,3 +27,4 @@ class Component(ABC):
     def get_posicao(self) -> list[float]:
         """Retorna a posição atual [x, y]."""
         ...
+

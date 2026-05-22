@@ -1,12 +1,14 @@
 from __future__ import annotations
 
-import sys
 import os
+import sys
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from dtos import ResultPayload
+
 from .base import PuzzleConstrutor
-from .puzzle import QuebraCabecaFacil, QuebraCabecaMedio, QuebraCabecaDificil
+from .puzzle import QuebraCabecaDificil, QuebraCabecaFacil, QuebraCabecaMedio
 
 QuebraCabeca = QuebraCabecaFacil | QuebraCabecaMedio | QuebraCabecaDificil
 
@@ -22,7 +24,10 @@ class Director:
 
     @property
     def construtor(self) -> PuzzleConstrutor:
-        return self._construtor
+        if self._construtor:
+            return self._construtor
+        else:
+            raise ValueError("Nenhum construtor (PuzzleConstrutor) foi definido.")
 
     @construtor.setter
     def construtor(self, construtor: PuzzleConstrutor) -> None:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from composite.peca_unica import PecaUnica
+
 from .base import PuzzleConstrutor
 from .puzzle import QuebraCabecaMedio
 
@@ -42,6 +43,7 @@ class ConstrutorMedio(PuzzleConstrutor):
 
     def distribuir_pecas(self) -> None:
         import random
+
         for peca in self._resultado.pecas:
             offset_x = random.uniform(-0.2, 0.2)
             offset_y = random.uniform(-0.2, 0.2)
@@ -52,3 +54,4 @@ class ConstrutorMedio(PuzzleConstrutor):
         resultado = self._resultado
         self._resultado = QuebraCabecaMedio()
         return resultado
+

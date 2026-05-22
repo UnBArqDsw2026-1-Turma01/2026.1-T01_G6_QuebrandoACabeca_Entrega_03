@@ -11,7 +11,7 @@ class Composite(Component):
     uma única unidade, viabilizando a lógica de montar subgrupos antes
     de completar o quebra-cabeça inteiro.
 
-    Atributos (conforme diagrama):
+    Atributos:
         componentes: List<Component>
 
     Métodos extras além da interface Component:

@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from abc import ABC, abstractmethod
 
 
@@ -24,3 +25,4 @@ class EfeitoImagem(ABC):
     def get_nome(self) -> str:
         """Retorna o nome do efeito/algoritmo."""
         ...
+

@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from .efeito_imagem import EfeitoImagem
 
 
@@ -38,3 +39,4 @@ class EfeitoGradeQuadricular(EfeitoImagem):
 
     def get_nome(self) -> str:
         return "Efeito Grade Quadricular"
+

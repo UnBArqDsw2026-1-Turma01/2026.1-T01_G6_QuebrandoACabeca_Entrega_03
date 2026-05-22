@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from dataclasses import dataclass, field
 
 from .component import Component
@@ -57,3 +58,4 @@ class PecaUnica(Component):
             f"certa=({self.posicao_x_certa:.2f},{self.posicao_y_certa:.2f}), "
             f"encaixada={self.esta_montada()})"
         )
+

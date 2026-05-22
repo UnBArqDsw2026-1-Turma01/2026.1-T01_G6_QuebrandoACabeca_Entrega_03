@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from .efeito_imagem import EfeitoImagem
 
 
@@ -47,3 +48,4 @@ class EfeitoQB:
         if self._estrategia is None:
             raise ValueError("Nenhum efeito (EfeitoImagem) foi definido.")
         return self._estrategia.executar(imagem)
+

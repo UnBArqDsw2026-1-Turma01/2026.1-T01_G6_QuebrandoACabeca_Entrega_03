@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from composite.peca_unica import PecaUnica
+
 from .base import PuzzleConstrutor
 from .puzzle import QuebraCabecaDificil
 
@@ -42,6 +43,7 @@ class ConstrutorDificil(PuzzleConstrutor):
 
     def distribuir_pecas(self) -> None:
         import random
+
         for peca in self._resultado.pecas:
             peca.posicao_x = random.uniform(0.0, 1.0)
             peca.posicao_y = random.uniform(0.0, 1.0)

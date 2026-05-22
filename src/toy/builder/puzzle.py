@@ -1,14 +1,15 @@
 from __future__ import annotations
+
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from composite.component import Component
+    from composite.peca_unica import PecaUnica
 
 
 @dataclass
 class QuebraCabecaFacil:
-    pecas: list["Component"] = field(default_factory=list)
+    pecas: list["PecaUnica"] = field(default_factory=list)
     numero_pecas: int = 25
     rotacao: bool = False
 
@@ -24,7 +25,7 @@ class QuebraCabecaFacil:
 
 @dataclass
 class QuebraCabecaMedio:
-    pecas: list["Component"] = field(default_factory=list)
+    pecas: list["PecaUnica"] = field(default_factory=list)
     numero_pecas: int = 36
     rotacao: bool = False
 
@@ -40,7 +41,7 @@ class QuebraCabecaMedio:
 
 @dataclass
 class QuebraCabecaDificil:
-    pecas: list["Component"] = field(default_factory=list)
+    pecas: list["PecaUnica"] = field(default_factory=list)
     numero_pecas: int = 64
     rotacao: bool = True
 

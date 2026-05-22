@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from .efeito_imagem import EfeitoImagem
 
 
@@ -49,3 +50,4 @@ class EfeitoJigsaw(EfeitoImagem):
 
     def get_nome(self) -> str:
         return "Efeito Jigsaw"
+

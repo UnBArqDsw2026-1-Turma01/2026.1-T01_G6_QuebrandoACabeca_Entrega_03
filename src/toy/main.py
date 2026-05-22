@@ -1,28 +1,28 @@
 if __name__ == "__main__":
     import sys
 
-    from difficulty.factory import get_difficulty
-    from builder.director import Director
+    from builder.construtor_dificil import ConstrutorDificil
     from builder.construtor_facil import ConstrutorFacil
     from builder.construtor_medio import ConstrutorMedio
-    from builder.construtor_dificil import ConstrutorDificil
+    from builder.director import Director
     from composite.composite import Composite
-    from strategy.efeito_qb import EfeitoQB
+    from difficulty.factory import get_difficulty
+    from dtos import GetToyDifficultyPayload
     from strategy.efeito_grade_quadricular import EfeitoGradeQuadricular
     from strategy.efeito_jigsaw import EfeitoJigsaw
+    from strategy.efeito_qb import EfeitoQB
     from strategy.grade_quadricular import GradeQuadricular
-    from dtos import GetToyDifficultyPayload
 
     BUILDERS = {
-        "easy":   ConstrutorFacil,
+        "easy": ConstrutorFacil,
         "medium": ConstrutorMedio,
-        "hard":   ConstrutorDificil,
+        "hard": ConstrutorDificil,
     }
 
     GRADES = {
-        "easy":   5,
+        "easy": 5,
         "medium": 6,
-        "hard":   8,
+        "hard": 8,
     }
 
     selected_difficulty = sys.argv[1] if len(sys.argv) > 1 else "easy"
@@ -35,6 +35,10 @@ if __name__ == "__main__":
             print(f"Error: {error}")
         sys.exit(1)
 
+    if not result_difficulty.data:
+        print("Error: Difficulty data is missing.")
+        sys.exit(1)
+
     difficulty = result_difficulty.data
     print(f"Selected difficulty: {difficulty.get_difficulty_level()}")
     print(f"Number of pieces: {difficulty.get_num_pieces()}")
@@ -45,6 +49,10 @@ if __name__ == "__main__":
     if not result_builder.success:
         for error in result_builder.error:
             print(f"Error: {error}")
+        sys.exit(1)
+
+    if not result_builder.data:
+        print("Error: Builder data is missing.")
         sys.exit(1)
 
     qc = result_builder.data
@@ -62,10 +70,14 @@ if __name__ == "__main__":
 
     # Strategy — imagem simulada com tamanho da grade da dificuldade
     tamanho = GRADES.get(selected_difficulty, 5)
-    imagem_simulada = [[i * tamanho + j for j in range(tamanho)] for i in range(tamanho)]
+    imagem_simulada = [
+        [i * tamanho + j for j in range(tamanho)] for i in range(tamanho)
+    ]
 
     efeito_qb = EfeitoQB()
     for estrategia in [EfeitoGradeQuadricular(), EfeitoJigsaw(), GradeQuadricular()]:
         efeito_qb.set_efeito(estrategia)
         resultado = efeito_qb.aplicar_efeito(imagem_simulada)
-        print(f"Efeito aplicado: {efeito_qb.escolher_efeito()} → {len(resultado)}x{len(resultado[0])} pixels")
+        print(
+            f"Efeito aplicado: {efeito_qb.escolher_efeito()} → {len(resultado)}x{len(resultado[0])} pixels"
+        )
