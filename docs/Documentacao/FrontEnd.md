@@ -174,7 +174,7 @@ navigate('/pause')     // abre o pause
 
 <p align="center">
     <video width="100%" controls>
-        <source src="./assets/demo.mp4" type="video/mp4">
+        <source src="./assets/Demo.mp4" type="video/mp4">
     </video>
 </p>
 
