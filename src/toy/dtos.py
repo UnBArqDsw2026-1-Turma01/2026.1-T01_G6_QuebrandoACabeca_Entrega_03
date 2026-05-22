@@ -101,3 +101,10 @@ class ResultPayload(BasePayload, Generic[T]):
         self.message = message or []
         self.error = error or []
         self.data = data
+
+
+class GetToyDifficultyPayload(BasePayload):
+    __slots__ = ("difficulty",)
+
+    def __init__(self, difficulty: str) -> None:
+        self.difficulty = difficulty

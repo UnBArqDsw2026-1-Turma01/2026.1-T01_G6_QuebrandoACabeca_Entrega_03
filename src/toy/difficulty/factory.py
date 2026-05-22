@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import importlib
 
+from ..dtos import GetToyDifficultyPayload, ResultPayload
 from .base import Difficulty
 
 
-def get_difficulty(selected_difficulty: str) -> Difficulty:
+def get_difficulty(dto: GetToyDifficultyPayload) -> ResultPayload[Difficulty]:
     """
     Importa e instancia a classe de dificuldade selecionada dinamicamente.
     Args:
@@ -13,6 +14,8 @@ def get_difficulty(selected_difficulty: str) -> Difficulty:
     Returns:
         Difficulty: A instância da dificuldade selecionada.
     """
+    selected_difficulty = dto.difficulty
+
     try:
         module = importlib.import_module(
             f".{selected_difficulty.lower()}", package=__package__
@@ -26,13 +29,19 @@ def get_difficulty(selected_difficulty: str) -> Difficulty:
                 f"Class '{class_name}' in '{selected_difficulty}.py' module does not implement Difficulty."
             )
 
-        return backend_class()
+        return ResultPayload(
+            success=True, message=["Was able to get difficulty!"], data=backend_class()
+        )
     except ImportError:
-        raise ValueError(
-            f"Module for difficulty level '{selected_difficulty}' not found."
+        return ResultPayload(
+            success=False,
+            error=[f"Difficulty '{selected_difficulty}' not found."],
         )
 
     except AttributeError:
-        raise ValueError(
-            f"Class '{class_name}' not found in '{selected_difficulty}.py' module."
+        return ResultPayload(
+            success=False,
+            error=[
+                f"Class '{class_name}' not found in '{selected_difficulty}.py' module."
+            ],
         )
