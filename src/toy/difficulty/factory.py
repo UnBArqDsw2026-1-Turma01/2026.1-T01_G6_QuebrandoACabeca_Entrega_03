@@ -2,7 +2,8 @@ from __future__ import annotations
 
 import importlib
 
-from ..dtos import GetToyDifficultyPayload, ResultPayload
+from dtos import GetToyDifficultyPayload, ResultPayload
+
 from .base import Difficulty
 
 

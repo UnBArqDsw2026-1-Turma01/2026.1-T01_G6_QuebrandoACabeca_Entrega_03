@@ -3,7 +3,7 @@ if __name__ == "__main__":
 
     from difficulty.factory import get_difficulty
 
-    from .dtos import GetToyDifficultyPayload
+    from dtos import GetToyDifficultyPayload
 
     selected_difficulty = sys.argv[1] if len(sys.argv) > 1 else "easy"
     dto = GetToyDifficultyPayload(difficulty=selected_difficulty)
@@ -18,5 +18,5 @@ if __name__ == "__main__":
         sys.exit(1)
 
     difficulty = result_get_difficulty.data
-    print(f"Selected difficulty: {difficulty.get_difficulty_level}")
-    print(f"Number of pieces: {difficulty.get_num_pieces}")
+    print(f"Selected difficulty: {difficulty.get_difficulty_level()}")
+    print(f"Number of pieces: {difficulty.get_num_pieces()}")
