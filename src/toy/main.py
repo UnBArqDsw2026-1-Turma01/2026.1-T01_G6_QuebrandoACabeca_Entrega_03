@@ -19,6 +19,12 @@ if __name__ == "__main__":
         "hard":   ConstrutorDificil,
     }
 
+    GRADES = {
+        "easy":   5,
+        "medium": 6,
+        "hard":   8,
+    }
+
     selected_difficulty = sys.argv[1] if len(sys.argv) > 1 else "easy"
 
     # Difficulty
@@ -54,11 +60,11 @@ if __name__ == "__main__":
     grupo.adicionar(peca_2)
     print(f"Grupo encaixado: {grupo.verificar_colisao()}")
 
-    # Strategy — aplica efeito de corte na imagem (simulada como matriz 8x8)
-    imagem_simulada = [[i * 8 + j for j in range(8)] for i in range(8)]
+    # Strategy — imagem simulada com tamanho da grade da dificuldade
+    tamanho = GRADES.get(selected_difficulty, 5)
+    imagem_simulada = [[i * tamanho + j for j in range(tamanho)] for i in range(tamanho)]
 
     efeito_qb = EfeitoQB()
-
     for estrategia in [EfeitoGradeQuadricular(), EfeitoJigsaw(), GradeQuadricular()]:
         efeito_qb.set_efeito(estrategia)
         resultado = efeito_qb.aplicar_efeito(imagem_simulada)
