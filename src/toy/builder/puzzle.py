@@ -8,11 +8,6 @@ if TYPE_CHECKING:
 
 @dataclass
 class QuebraCabecaFacil:
-    """
-    Produto concreto para dificuldade fácil.
-    - numeroPecas: 25 (grade 5x5)
-    - rotacao: False
-    """
     pecas: list["Component"] = field(default_factory=list)
     numero_pecas: int = 25
     rotacao: bool = False
@@ -20,6 +15,7 @@ class QuebraCabecaFacil:
     def __repr__(self) -> str:
         return (
             f"QuebraCabecaFácil("
+            f"grade=5x5, "
             f"numero_pecas={self.numero_pecas}, "
             f"rotacao={self.rotacao}, "
             f"pecas_geradas={len(self.pecas)})"
@@ -28,11 +24,6 @@ class QuebraCabecaFacil:
 
 @dataclass
 class QuebraCabecaMedio:
-    """
-    Produto concreto para dificuldade média.
-    - numeroPecas: 36 (grade 6x6)
-    - rotacao: False
-    """
     pecas: list["Component"] = field(default_factory=list)
     numero_pecas: int = 36
     rotacao: bool = False
@@ -40,6 +31,7 @@ class QuebraCabecaMedio:
     def __repr__(self) -> str:
         return (
             f"QuebraCabecaMédio("
+            f"grade=6x6, "
             f"numero_pecas={self.numero_pecas}, "
             f"rotacao={self.rotacao}, "
             f"pecas_geradas={len(self.pecas)})"
@@ -48,11 +40,6 @@ class QuebraCabecaMedio:
 
 @dataclass
 class QuebraCabecaDificil:
-    """
-    Produto concreto para dificuldade difícil.
-    - numeroPecas: 64 (grade 8x8)
-    - rotacao: True
-    """
     pecas: list["Component"] = field(default_factory=list)
     numero_pecas: int = 64
     rotacao: bool = True
@@ -60,6 +47,7 @@ class QuebraCabecaDificil:
     def __repr__(self) -> str:
         return (
             f"QuebraCabecaDifícil("
+            f"grade=8x8, "
             f"numero_pecas={self.numero_pecas}, "
             f"rotacao={self.rotacao}, "
             f"pecas_geradas={len(self.pecas)})"
