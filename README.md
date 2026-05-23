@@ -107,13 +107,39 @@ Acesse em: **http://localhost:3001**
 
 > 💡 Caso a porta `3001` já esteja em uso, o React sugerirá automaticamente a próxima disponível.
 
+## ⚙️ Executando o Backend
+
+O núcleo de processamento do projeto — responsável pela geração dos quebra-cabeças.
+
+### Pré-requisitos
+
+> [Python 3](https://www.python.org/) instalado na máquina.
+
+```sh
+# Verifique a instalação
+python3 --version
+```
+
+### 1 · Entrar na pasta do backend
+
+```sh
+cd src/toy/
+```
+
+### 2 · Executar o backend
+
+```sh
+python3 main.py
+```
+
 ## 📜 Histórico de Versões
 
 | Versão | Data | Alterações | Autor |
 |:------:|:----:|------------|:-----:|
-| `1.0` | 15/05/2026 | Inserir o template inicial da página.         | Lucas Ricarte |
-| `1.1` | 15/05/2026 | Ajustar o template inicial da página.         | João Eduardo  |
-| `1.2` | 21/05/2026 | Adicionar instruções de execução do frontend. | João Eduardo |
+| `1.0` | 15/05/2026 | Inserir o template inicial da página.          | Lucas Ricarte |
+| `1.1` | 15/05/2026 | Ajustar o template inicial da página.          | João Eduardo  |
+| `1.2` | 21/05/2026 | Adicionar instruções de execução do frontend.  | João Eduardo  |
+| `1.3` | 22/05/2026 | Adicionar instruções de execução do backend.   | João Eduardo  |
 
 <div align="center">
 <br>

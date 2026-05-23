@@ -457,38 +457,67 @@ body {
         [[slider]](assets/Builder.jpg|assets/Composite.jpg|assets/Strategy.jpg|assets/Fluxograma.png|assets/Figma/Cadastro.png|assets/Figma/Configuracoes.png|assets/Figma/Dica.png|assets/Figma/Historico.png|assets/Figma/JogoRodando.png|assets/Figma/MenuPrincipal.png|assets/Figma/PausarJogo.png|assets/Figma/Placar.png|assets/Figma/ProximoNivel.png|assets/Figma/RecuperarSenha.png|assets/Figma/SelecaoDificuldade.png|assets/Figma/SelecaoNivel.png|assets/Figma/TelaLogin.png|assets/Figma/Tutorial.png|assets/Figma/UploadImagem.png|assets/Figma/Vitoria.png)
     </div>
   </div>
-  <!-- EXECUÇÃO -->
-  <div class="section">
-    <div class="section-label">§ 04</div>
-    <h2 class="section-title">Há Algo a Ser Executado?</h2>
-    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;">
-      <div class="exec-badge"><span class="exec-dot active"></span> SIM</div>
-      <div class="exec-badge"><span class="exec-dot "></span> NÃO</div>
-    </div>
+<!-- EXECUÇÃO -->
+<div class="section">
+  <div class="section-label">§ 04</div>
+  <h2 class="section-title">Há Algo a Ser Executado?</h2>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;">
+    <div class="exec-badge"><span class="exec-dot active"></span> SIM</div>
+    <div class="exec-badge"><span class="exec-dot"></span> NÃO</div>
+  </div>
 
+  <!-- FRONTEND -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--ink);margin-bottom:0.75rem;">🎨 Frontend</h3>
   <p style="color:var(--ink-muted);font-size:0.92rem;margin-bottom:1rem;">
     Para executar o <strong>Frontend</strong> localmente, navegue até a pasta
     <code>frontend</code> do repositório e execute os comandos abaixo:
   </p>
   <pre style="background:var(--bg-card);border:1px solid var(--rule);padding:1.25rem 1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.82rem;color:var(--ink);line-height:1.8;overflow-x:auto;">
-  <span style="color:var(--ink-faint)"># 1. Instalar as dependências</span>
-  npm install
+<span style="color:var(--ink-faint)"># 1. Instalar as dependências</span>
+npm install
 
-  <span style="color:var(--ink-faint)"># 2. Iniciar a aplicação</span>
-  npm start</pre>
-  <p style="color:var(--ink-muted);font-size:0.92rem;margin-top:1rem;">
+<span style="color:var(--ink-faint)"># 2. Iniciar a aplicação</span>
+npm start</pre>
+  <p style="color:var(--ink-muted);font-size:0.92rem;margin-top:1rem;margin-bottom:2rem;">
     A aplicação estará disponível em
     <a href="http://localhost:3000" class="footer-link" style="font-family:'JetBrains Mono',monospace;font-size:0.85rem;">http://localhost:3000 ↗</a>
   </p>
-  </div>
-  <!-- INFORMAÇÕES COMPLEMENTARES -->
-  <div class="section">
-    <div class="section-label">§ 05</div>
-    <h2 class="section-title">Informações Complementares</h2>
-    <p style="color:var(--ink-muted);font-style:italic;font-size:0.92rem;">
-      Quaisquer outras informações adicionais podem ser descritas nesta seção.
-    </p>
-  </div>
+
+  <!-- DIVIDER -->
+  <hr style="border:none;border-top:1px solid var(--rule);margin:1.5rem 0;" />
+
+  <!-- BACKEND -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--ink);margin-bottom:0.75rem;">⚙️ Backend</h3>
+  <p style="color:var(--ink-muted);font-size:0.92rem;margin-bottom:1rem;">
+    Para executar o <strong>Backend</strong> localmente, certifique-se de ter o
+    <strong>Python 3</strong> instalado e siga os passos abaixo:
+  </p>
+
+  <p style="color:var(--ink-muted);font-size:0.92rem;margin-bottom:0.5rem;">
+    <strong>Pré-requisitos</strong>
+  </p>
+  <pre style="background:var(--bg-card);border:1px solid var(--rule);padding:1.25rem 1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.82rem;color:var(--ink);line-height:1.8;overflow-x:auto;">
+<span style="color:var(--ink-faint)"># Verifique se o Python 3 está instalado</span>
+python3 --version
+
+<span style="color:var(--ink-faint)"># Instale o pip caso não tenha</span>
+sudo apt install python3-pip        <span style="color:var(--ink-faint)"># Linux</span>
+brew install python                 <span style="color:var(--ink-faint)"># macOS</span></pre>
+
+   <p style="color:var(--ink-muted);font-size:0.92rem;margin-top:1rem;margin-bottom:0.5rem;">
+    <strong>Instalação e execução</strong>
+  </p>
+  <pre style="background:var(--bg-card);border:1px solid var(--rule);padding:1.25rem 1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.82rem;color:var(--ink);line-height:1.8;overflow-x:auto;">
+<span style="color:var(--ink-faint)"># 1. Navegue até a pasta do backend</span>
+cd src/toy/
+
+<span style="color:var(--ink-faint)"># 2. Execute o backend</span>
+python3 main.py</pre>
+  <p style="color:var(--ink-muted);font-size:0.92rem;margin-top:1rem;">
+    O servidor estará disponível conforme configurado no
+    <code>main.py</code> do projeto.
+  </p>
+</div>
   <!-- HISTÓRICO -->
   <div class="section">
     <div class="section-label">§ 06</div>
@@ -519,6 +548,13 @@ body {
         <tr>
           <td>22/05/2026</td>
           <td>Inclusão dos Screenshots e ajustes.</td>
+          <td>João Eduardo</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>22/05/2026</td>
+          <td>Informações BackEnd.</td>
           <td>João Eduardo</td>
         </tr>
       </tbody>
