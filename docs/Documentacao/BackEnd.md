@@ -152,7 +152,7 @@ A aplicação de efeitos visuais ao tabuleiro é feita via Strategy, permitindo 
         ...
 ```
 
-> [!NOTE] Na nossa implementação atual, o modelo de Difficulty, que é criado pela Factory, é, para todos os efeitos, um Strategy com Template de dificuldade. Contúdo, devido à pressa e à decisão de tentar chegar o mais perto possível do SRP (Single Responsibility Principle), nós acabamos por criar outra forma de gerenciar a dificuldade, ou seja, via builder. Isso acaba por quebrar DRY, algo que já planejamos corrigir utilizando algo parecido como um "StrategyBuilder", onde as classes de dificuldade seriam Strategies, e elas cuidariam de retornar Builders baseados em suas próprias regras de dificuldade. A implementação mantém-se funcional, mas este é uma limitação e ponto de melhoria para o futuro.
+> Na nossa implementação atual, o modelo de Difficulty, que é criado pela Factory, é, para todos os efeitos, um Strategy com Template de dificuldade. Contúdo, devido à pressa e à decisão de tentar chegar o mais perto possível do SRP (Single Responsibility Principle), nós acabamos por criar outra forma de gerenciar a dificuldade, ou seja, via builder. Isso acaba por quebrar DRY, algo que já planejamos corrigir utilizando algo parecido como um "StrategyBuilder", onde as classes de dificuldade seriam Strategies, e elas cuidariam de retornar Builders baseados em suas próprias regras de dificuldade. A implementação mantém-se funcional, mas este é uma limitação e ponto de melhoria para o futuro.
 
 ### Return Pattern (ResultPayload)
 
