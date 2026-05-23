@@ -131,6 +131,29 @@ class_name = f"{selected_difficulty.capitalize()}Difficulty"
 backend_class = getattr(module, class_name)
 ```
 
+### Padrão Strategy
+
+A aplicação de efeitos visuais ao tabuleiro é feita via Strategy, permitindo trocar a estratégia de efeito em tempo de execução:
+```python
+    @abstractmethod
+    def executar(self, imagem: list[list[int]]) -> list[list[int]]:
+        """
+        Executa o efeito/corte na imagem.
+        Args:
+            imagem: Representação da imagem como matriz de pixels.
+        Returns:
+            Imagem processada.
+        """
+        ...
+
+    @abstractmethod
+    def get_nome(self) -> str:
+        """Retorna o nome do efeito/algoritmo."""
+        ...
+```
+
+> [!NOTE] Na nossa implementação atual, o modelo de Difficulty, que é criado pela Factory, é, para todos os efeitos, um Strategy com Template de dificuldade. Contúdo, devido à pressa e à decisão de tentar chegar o mais perto possível do SRP (Single Responsibility Principle), nós acabamos por criar outra forma de gerenciar a dificuldade, ou seja, via builder. Isso acaba por quebrar DRY, algo que já planejamos corrigir utilizando algo parecido como um "StrategyBuilder", onde as classes de dificuldade seriam Strategies, e elas cuidariam de retornar Builders baseados em suas próprias regras de dificuldade. A implementação mantém-se funcional, mas este é uma limitação e ponto de melhoria para o futuro.
+
 ### Return Pattern (ResultPayload)
 
 Todas as operações críticas retornam um `ResultPayload` padronizado, evitando exceções não tratadas na camada de chamada:

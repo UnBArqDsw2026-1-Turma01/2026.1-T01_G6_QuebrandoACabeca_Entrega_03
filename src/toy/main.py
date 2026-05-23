@@ -40,8 +40,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     difficulty = result_difficulty.data
-    print(f"Selected difficulty: {difficulty.get_difficulty_level()}")
-    print(f"Number of pieces: {difficulty.get_num_pieces()}")
+    print(f"Dificuldade Selecionada: {difficulty.get_difficulty_level()}")
+    print(f"Número de Peças: {difficulty.get_num_pieces()}")
 
     # Builder
     builder_class = BUILDERS.get(selected_difficulty, ConstrutorFacil)
